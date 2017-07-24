@@ -1,0 +1,120 @@
+<html>
+<title>
+</title>
+<head>
+
+
+</head>
+<body>
+<div>
+<table class="table" border="1">
+
+			<thead>
+				<tr>
+				</tr>
+				<tr>
+					<th>firstname</th>
+					<th>middlename</th>
+					<th>lastname</th>
+					 <th>Action</th> 
+					 <th>Delete</th> 
+					<!-- <td><button class="add-details">display</button></td> -->
+				</tr>
+				 <tr>
+					<td><input class="firstname-input"></td>
+					<td><input class="middlename-input"></td>
+					<td><input class="lastname-input"></td>
+					<td><button class="add-details">Add</button></td>
+				</tr> 
+				
+				
+			</thead>
+			
+
+			<tbody class="details-list"></tbody>
+			
+</table>
+
+    <script type="text/template" class="details-list-template">
+	
+	<td><span class="firstname"><%= firstname %></span></td>
+	<td><span class="middlename"><%= middlename %></span></td>
+	<td><span class="lastname"><%= lastname %></span></td>
+		<td><button class="edit-detail">Edit</button> 
+		
+		<button class="update-detail" style="display:none">Update</button> 
+		<button class="cancel" style="display:none">Cancel</button>
+		
+		</td>
+		<td><input class="checkbox" type="checkbox"></td>
+		
+		
+		
+    </script>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div>
+
+<table class="table12" border="1">
+
+			<thead>
+				<tr><th colspan="3">Removeddata</th></tr>
+				<tr>
+					<th>firstname</th>
+					<th>middlename</th>
+					<th>lastname</th>
+					 
+					<!-- <td><button class="add-details">display</button></td> -->
+				</tr>
+				<tr>
+					
+				</tr>
+				
+			</thead>
+			
+
+			<tbody class="details1-list"></tbody>
+</table>
+
+<script type="text/template" class="details1-list-template">
+	
+	<td><span class="firstname1"><%= firstname1 %></span></td>
+	<td><span class="middlename1"><%= middlename1 %></span></td>
+	<td><span class="lastname1"><%= lastname1 %></span></td>
+	<td><input class="checkbox1" type="checkbox">	
+		</td>
+		
+		
+		
+    </script>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="vendor/jquery/jquery.js"></script>
+	<script src="vendor/underscore/underscore.js"></script>
+	<script src="vendor/backbone/backbone.js"></script>
+	<script src="details.js"></script>
+	<script src="removeddetails.js"></script>
+</body>
+</html>
